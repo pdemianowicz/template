@@ -51,20 +51,19 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly.
         </nav>
 
         <div class="header__icons">
-          <a class="header__cart-button" href="<?php echo esc_url( wc_get_cart_url() ); ?>">
-            <span class="screen-reader-text"><?php esc_html_e( 'Cart', 'template' ); ?></span>
+          <?php if (class_exists('Woocommerce')) { ?>
+            <a class="header__cart-button" href="<?php echo esc_url( wc_get_cart_url() ); ?>">
+              <span class="screen-reader-text"><?php esc_html_e( 'Cart', 'template' ); ?></span>
 
-            <span class="header__cart-amount">
-              <?php
-                if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
-                  echo WC()->cart->get_cart_contents_count();
-                }?>
-            </span>
+              <span class="header__cart-amount">
+                <?php echo WC()->cart->get_cart_contents_count(); ?>
+              </span>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-            </svg>
-          </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg>
+            </a> 
+          <?php } ?>
 
           <button class="header__search-button"> 
             <span class="screen-reader-text"><?php esc_html_e( 'Search', 'template' ); ?></span>
@@ -82,5 +81,3 @@ defined( 'ABSPATH' ) || exit; // Exit if accessed directly.
       <?php get_search_form(); ?>
       <span class="search-bar__close">&times;</span>
     </div>
-
-    
