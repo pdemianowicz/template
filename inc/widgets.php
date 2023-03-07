@@ -18,7 +18,7 @@ function template_widgets_init() {
   //   'after_title'   => '</h3>',
   // ) ); 
 
-	if ( class_exists( 'woocommerce' ) ){
+	if ( class_exists( 'Woocommerce' ) ){
 		register_sidebar(
 			array(
 				'name'          => __( 'WooCommerce Shop Sidebar', 'template' ),
