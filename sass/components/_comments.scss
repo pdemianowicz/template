@@ -1,0 +1,124 @@
+.comments-area {
+  --color-comment-text: #727272;
+  --color-comment-text-background: #f8f8f8;
+  margin-top: 50px;
+}
+
+.comments-title {
+  border-bottom: 1px solid $color_border;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.comment-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .children {
+    list-style: none;
+    @media (max-width: 768px) {
+      padding-inline-start: 0;
+    }
+  }
+
+  p {
+    color: var(--color-comment-text);
+    margin-bottom: 0;
+  }
+
+  .comment-body {
+    margin-bottom: 20px;
+
+    .comment-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 10px;
+      .comment-author {
+        display: flex;
+        align-items: center;
+
+        cite {
+          margin-right: 8px;
+        }
+
+        .avatar {
+          margin-right: 10px;
+        }
+      }
+
+      .comment-date {
+        margin-right: 10px;
+      }
+    }
+
+    .comment-content {
+      .comment-text {
+        padding: 18px;
+        background-color: var(--color-comment-text-background);
+        border-radius: 3px;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        word-wrap: break-word;
+        color: $color_links;
+      }
+    }
+
+    .reply {
+      text-align: right;
+      padding-top: 10px;
+      margin-bottom: 20px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.comment-respond {
+  background-color: rgba(0, 0, 0, 0.0125);
+  position: relative;
+  margin-bottom: 50px;
+
+  .comment-form-comment {
+    margin-bottom: 20px;
+  }
+
+  .comment-form-author,
+  .comment-form-email,
+  .comment-form-url {
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    input {
+      border-width: 1px;
+      padding: 15px;
+      width: 100%;
+    }
+  }
+
+  .form-submit {
+    margin-bottom: 0;
+  }
+
+  #cancel-comment-reply-link {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 1em;
+    aspect-ratio: 1;
+    overflow: hidden;
+    transition: transform, ease, 0.3s;
+    &::before {
+      content: "X";
+      display: block;
+    }
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}

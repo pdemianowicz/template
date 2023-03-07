@@ -1,0 +1,28 @@
+// Adding basic WordPress classes to pass the WordPress.org tests
+.sticky,
+.gallery-caption,
+.bypostauthor {
+  font-size: inherit;
+}
+
+// Necessary WP classes
+.wp-caption {
+  font-size: inherit;
+
+  img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.wp-caption-text {
+  font-size: inherit;
+  font-style: italic;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.wp-caption,
+.aligncenter .wp-caption-text {
+  text-align: center;
+}

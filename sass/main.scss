@@ -1,0 +1,70 @@
+/*!
+Theme Name:   template
+Theme URI:    https://github.com/pdemianowicz
+Description:  ...
+Author:       pdemianowicz
+Author URI:   https://github.com/pdemianowicz
+Version:      1.0.0
+Text Domain:  template
+
+*/
+
+// Reset
+@import "helpers/reset";
+
+// Fonts
+@import "base/fonts";
+
+// Variables
+@import "base/variables";
+
+// Helpers
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/breakpoints";
+@import "helpers/wp_basic_styles";
+@import "helpers/alignments";
+
+// Accessibility
+@import "helpers/accessibility";
+
+// Base
+@import "base/base";
+@import "base/typography";
+
+// Components
+@import "components/button";
+@import "components/forms";
+@import "components/comments";
+@import "components/gallery";
+@import "components/pagination";
+@import "components/related-posts";
+@import "components/search-bar";
+@import "components/top";
+@import "components/cookie-notice";
+
+// Structure
+@import "layouts/header";
+@import "layouts/nav-mobile";
+@import "layouts/nav-desktop";
+@import "layouts/footer";
+
+// @import "layout/general";
+// @import "layout/print";
+// @import "layout/typography";
+// @import "layout/forms";
+// @import "layout/wordpress";
+
+// Pages
+@import "pages/front-page";
+@import "pages/posts";
+@import "pages/index";
+@import "pages/search";
+@import "pages/404";
+@import "pages/contact-template";
+
+// @import "pages/";
+// @import "pages/";
+
+// Woocommerce
+@import "woocommerce";

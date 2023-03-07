@@ -1,0 +1,35 @@
+.search-bar {
+  display: none;
+  position: relative;
+
+  .search-submit {
+    display: none !important;
+  }
+
+  &__close {
+    position: absolute;
+    top: 50%;
+    right: 1.6rem;
+    transform: translateY(-50%);
+    width: 2rem;
+    aspect-ratio: 1;
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: $dark-color-700;
+    cursor: pointer;
+  }
+
+  input[type="search"] {
+    border-bottom: 2px solid #363b40;
+    border-top: none transparent;
+    border-left: none transparent;
+    border-right: none transparent;
+    width: 100%;
+    font-size: 20px;
+    font-style: italic;
+    color: #16181a;
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+  }
+}

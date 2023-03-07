@@ -1,0 +1,68 @@
+@include mq(small) {
+  .nav {
+    color: #fff;
+    display: flex;
+
+    &__toggle {
+      background-color: transparent;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+
+      a {
+        padding: 1.6rem 1rem;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .sub-menu {
+        position: absolute;
+        min-width: 200px;
+        color: #333333;
+        background-color: #fff;
+        border: solid 1px #f4f4f4;
+        border-radius: 0.25rem;
+
+        li:hover {
+          background-color: $color-border;
+        }
+
+        a {
+          display: block;
+          padding: 0.8rem 1.2rem;
+        }
+      }
+
+      & li.menu-item-has-children > .sub-menu {
+        display: none;
+        top: 90%;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+        z-index: 10;
+      }
+
+      & > li.menu-item-has-children:hover > .sub-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+
+        & > li.menu-item-has-children {
+          position: relative;
+        }
+
+        & > li.menu-item-has-children:hover > .sub-menu {
+          top: 0;
+          left: 100%;
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+# Copyright (C) 2023 template
+# This file is distributed under the same license as the template package.
+msgid ""
+msgstr ""
+"Project-Id-Version: template\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-03-03 15:14+0000\n"
+"Project-Id-Version: undefined\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../404.php:13
+msgid "404"
+msgstr ""
+
+#: ../404.php:14
+msgid "It looks like nothing was found in this location. Perhaps you would like to go to our home page?"
+msgstr ""
+
+#: ../404.php:15
+msgid "Home"
+msgstr ""
+
+#: ../comments.php:19
+msgid "Comments"
+msgstr ""
+
+#: ../comments.php:22
+msgid "Comment Navigation Above"
+msgstr ""
+
+#: ../comments.php:23, ../comments.php:31, ../comments.php:53
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:24
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:25
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:33, ../comments.php:55
+msgid "Older Comments"
+msgstr ""
+
+#: ../comments.php:34, ../comments.php:56
+msgid "Newer Comments"
+msgstr ""
+
+#: ../comments.php:64
+msgid "Comments have been closed."
+msgstr ""
+
+#: ../comments.php:89
+msgid "Your comment is pending approval."
+msgstr ""
+
+#: ../comments.php:99
+msgid "&mdash; Edit"
+msgstr ""
+
+#: ../footer.php:63
+msgid "Back to top"
+msgstr ""
+
+#: ../footer.php:69
+msgid "This website uses cookies to ensure you get the best experience on our website."
+msgstr ""
+
+#: ../footer.php:70
+msgid "Read Privacy Policy"
+msgstr ""
+
+#: ../footer.php:72
+msgid "Got it!"
+msgstr ""
+
+#: ../header.php:27
+msgid "Skip to content"
+msgstr ""
+
+#: ../header.php:54
+msgid "Search"
+msgstr ""
+
+#: ../inc/setup.php:57
+msgid "Header"
+msgstr ""
+
+#: ../inc/setup.php:58
+msgid "Social Menu Links"
+msgstr ""
+
+#: ../inc/setup.php:59
+msgid "1 column footer"
+msgstr ""
+
+#: ../inc/setup.php:60
+msgid "2 column footer"
+msgstr ""
+
+#: ../inc/setup.php:61
+msgid "3 column footer"
+msgstr ""
+
+#: ../inc/setup.php:62
+msgid "4 column footer"
+msgstr ""
+
+#: ../inc/widgets.php:24
+msgid "WooCommerce Shop Sidebar"
+msgstr ""
+
+#: ../inc/woocommerce.php:133
+msgid "View your shopping cart"
+msgstr ""
+
+#. translators: number of items in the mini cart.
+#: ../inc/woocommerce.php:137
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../index.php:23, ../search.php:30
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#. translators: %s: search query.
+#: ../search.php:16
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../single.php:16
+msgid "Categories"
+msgstr ""
+
+#: ../single.php:39
+msgid "Edit post"
+msgstr ""
+
+#: ../template-parts/content.php:34, ../template-parts/related/related-post.php:39
+msgid "Read more"
+msgstr ""
+
+#: ../template-parts/content.php:41
+msgid "Read more..."
+msgstr ""
+
+#: ../template-parts/pagination/pagination.php:20
+msgid "Posts Navigation"
+msgstr ""
+
+#: ../template-parts/pagination/pagination.php:29
+msgid "Page"
+msgstr ""
+
+#: ../template-parts/pagination/pagination.php:30
+msgid "Next"
+msgstr ""
+
+#: ../template-parts/pagination/pagination.php:31
+msgid "Before"
+msgstr ""
+
+#: ../template-parts/related/related-post.php:32
+msgid "Related post"
+msgstr ""

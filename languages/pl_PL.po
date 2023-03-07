@@ -1,0 +1,207 @@
+# Copyright (C) 2023 template
+# This file is distributed under the same license as the template package.
+msgid ""
+msgstr ""
+"Project-Id-Version: undefined\n"
+"POT-Creation-Date: 2023-03-03 16:10+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:13
+msgid "404"
+msgstr "404"
+
+#: 404.php:14
+msgid ""
+"It looks like nothing was found in this location. Perhaps you would like to "
+"go to our home page?"
+msgstr ""
+"Wygląda na to, że w tej lokalizacji nic nie znaleziono. Może chciałbyś "
+"przejść na naszą stronę główną?"
+
+#: 404.php:15
+msgid "Home"
+msgstr "Strona główna"
+
+#: comments.php:19
+msgid "Comments"
+msgstr "Komentarze"
+
+#: comments.php:22
+msgid "Comment Navigation Above"
+msgstr "Nawigacja do komentarzy powyżej"
+
+#: comments.php:23 comments.php:31 comments.php:53
+msgid "Comment navigation"
+msgstr "Nawigacja komentarzy"
+
+#: comments.php:24
+msgid "&larr; Older Comments"
+msgstr "&larr; Starsze komentarze"
+
+#: comments.php:25
+msgid "Newer Comments &rarr;"
+msgstr "Nowsze komentarze &rarr;"
+
+#: comments.php:33 comments.php:55
+msgid "Older Comments"
+msgstr "Starsze komentarze"
+
+#: comments.php:34 comments.php:56
+msgid "Newer Comments"
+msgstr "Nowsze komentarze"
+
+#: comments.php:64
+msgid "Comments have been closed."
+msgstr "Komentarze zostały zamknięte."
+
+#: comments.php:89
+msgid "Your comment is pending approval."
+msgstr "Twój komentarz oczekuje na zatwierdzenie."
+
+#: comments.php:99
+msgid "&mdash; Edit"
+msgstr "&mdash; Edytuj"
+
+#: footer.php:63
+msgid "Back to top"
+msgstr "Wróć na górę strony"
+
+#: footer.php:69
+msgid ""
+"This website uses cookies to ensure you get the best experience on our "
+"website."
+msgstr ""
+"Ta strona używa plików cookie, aby zapewnić Ci najlepsze doświadczenia na "
+"naszej stronie."
+
+#: footer.php:70
+msgid "Read Privacy Policy"
+msgstr "Przeczytaj politykę prywatności "
+
+#: footer.php:72
+msgid "Got it!"
+msgstr "Ok"
+
+#: header.php:27
+msgid "Skip to content"
+msgstr "Przejdź do treści"
+
+#: header.php:54
+msgid "Search"
+msgstr "Szukaj"
+
+#: inc/setup.php:57
+msgid "Header"
+msgstr ""
+
+#: inc/setup.php:58
+msgid "Social Menu Links"
+msgstr ""
+
+#: inc/setup.php:59
+msgid "1 column footer"
+msgstr ""
+
+#: inc/setup.php:60
+msgid "2 column footer"
+msgstr ""
+
+#: inc/setup.php:61
+msgid "3 column footer"
+msgstr ""
+
+#: inc/setup.php:62
+msgid "4 column footer"
+msgstr ""
+
+#: inc/setup.php:91
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/setup.php:92
+msgid "Medium"
+msgstr ""
+
+#: inc/setup.php:93
+msgid "Large"
+msgstr ""
+
+#: inc/widgets.php:24
+msgid "WooCommerce Shop Sidebar"
+msgstr ""
+
+#: inc/woocommerce.php:133
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/woocommerce.php:137
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: index.php:23 search.php:30
+msgid "Sorry, no posts matched your criteria."
+msgstr "Przepraszamy, żadne posty nie pasują do Twoich kryteriów."
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Wyniki wyszukiwania dla: %s"
+
+#: single.php:16
+msgid "Categories"
+msgstr "Kategorie"
+
+#: single.php:39
+msgid "Edit post"
+msgstr "Edytuj wpis"
+
+#: template-parts/content.php:34 template-parts/related/related-post.php:39
+msgid "Read more"
+msgstr "Czytaj więcej"
+
+#: template-parts/content.php:41
+msgid "Read more..."
+msgstr "Czytaj więcej..."
+
+#: template-parts/pagination/pagination.php:20
+msgid "Posts Navigation"
+msgstr ""
+
+#: template-parts/pagination/pagination.php:29
+msgid "Page"
+msgstr "Strona"
+
+#: template-parts/pagination/pagination.php:30
+msgid "Next"
+msgstr "Następna"
+
+#: template-parts/pagination/pagination.php:31
+msgid "Before"
+msgstr "Poprzednia"
+
+#: template-parts/related/related-post.php:32
+msgid "Related post"
+msgstr "Polecane posty"
+
+#~ msgid "Szukaj"
+#~ msgstr "Szukaj"

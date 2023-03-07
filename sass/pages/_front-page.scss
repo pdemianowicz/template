@@ -1,0 +1,215 @@
+// The styles of the most important page on the website go here (front-page).
+.hero {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  text-align: center;
+  color: #f0fafb;
+  background-color: $dark-color-700;
+  padding: 10rem 0;
+  @include mq(small) {
+    padding: 13rem 0;
+    @include mq(medium) {
+      height: 105vh;
+    }
+  }
+
+  &__title {
+    color: #f0fafb;
+    @include mq(medium) {
+      font-size: 7rem;
+    }
+  }
+
+  &__desc {
+    @include mq(small) {
+      font-size: 2rem;
+    }
+  }
+
+  &__button-wrapper {
+    a {
+      display: inline-block;
+      padding: 1.5rem 4rem;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1;
+      color: $dark-color-700;
+      background-color: #10b981;
+      border: 1px solid #10b981;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-bottom: 6rem;
+      @include mq(medium) {
+        margin-bottom: 18rem;
+      }
+      &:hover {
+        color: #10b981;
+        background-color: $dark-color-700;
+      }
+    }
+  }
+
+  &__technologies {
+    &-title {
+      color: #fff;
+    }
+  }
+
+  &__technologies ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    @include mq(medium) {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #27272a;
+      padding: 1.25rem 0.75rem;
+      border-radius: 5px;
+      &:hover {
+        background-color: #3f3f46;
+      }
+
+      svg {
+        height: 2.25rem;
+      }
+
+      p {
+        margin-left: 1rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.best-practices {
+  background-color: #f8f9fa;
+  color: #545773;
+  position: relative;
+  padding-top: 6.5rem;
+  padding-bottom: 3.25rem;
+
+  &__title {
+    position: absolute;
+    top: -102px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__item-wrapper {
+    margin-top: -100px;
+    display: grid;
+    gap: 3.2rem;
+    @include mq(small) {
+      grid-template-columns: 1fr 1fr;
+
+      @include mq(medium) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+  &__item {
+    padding: 2.2rem;
+    color: #545773;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 29px 30px -25px rgba(0, 0, 0, 0.07);
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.24);
+    }
+  }
+  &__item-image {
+    color: #2a2d3e;
+    margin-bottom: 1.1rem;
+    svg {
+      display: block;
+      width: auto;
+      height: 2rem;
+    }
+  }
+  &__item-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.projects {
+  padding: 8rem 0;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__item-wrapper {
+    @include mq(small) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.2rem;
+    }
+  }
+
+  &__item {
+    background-color: #fff;
+    background-color: #f4f4f5;
+    border-radius: 6px;
+    box-shadow: 0 29px 30px -25px rgba(0, 0, 0, 0.07);
+    padding: 2.4rem;
+  }
+
+  &__item-image {
+    margin-bottom: 1.4rem;
+    img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+  }
+
+  &__item-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  &__item-links {
+    a {
+      display: inline-block;
+      padding: 0.5rem 2.5rem;
+      color: #fff;
+      background-color: #27272a;
+      font-weight: 600;
+      line-height: 1;
+      border: 2px solid #27272a;
+      &:hover {
+        background-color: transparent;
+        color: #27272a;
+      }
+
+      > svg {
+        width: auto;
+        height: 1.8rem;
+        margin-right: 0.5rem;
+        margin-top: -0.2rem;
+      }
+    }
+
+    a:first-child {
+      color: #fff;
+      background-color: #27272a;
+      border: 2px solid #27272a;
+      &:hover {
+        background-color: transparent;
+        color: #27272a;
+      }
+    }
+  }
+}

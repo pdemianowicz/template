@@ -1,0 +1,70 @@
+// Forms
+// #theme-main {
+button,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 0;
+  border-radius: 0;
+  background-color: $color_body;
+  border-color: $color_body;
+  color: #fff;
+  cursor: pointer;
+  // padding: 0.9rem 2.25rem;
+  text-decoration: none;
+  font-weight: 600;
+  text-shadow: none;
+  display: inline-block;
+
+  &:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed;
+
+    &:hover {
+      opacity: 0.5 !important;
+    }
+  }
+}
+
+input[type="search"]::placeholder {
+  color: #616161;
+}
+
+textarea {
+  padding-left: 0.875em;
+  width: 100%;
+}
+
+input {
+  outline: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="number"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="search"],
+textarea {
+  padding: 0.9rem;
+  background-color: darken($body-background, 5%);
+  color: $color_body;
+  border: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
+
+  &:focus {
+    background-color: darken($body-background, 7%);
+  }
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.5s 0.5s ease;
+  -moz-transition: opacity 0.5s 0.5s ease;
+  transition: opacity 0.5s 0.5s ease;
+  opacity: 0;
+}
+// }

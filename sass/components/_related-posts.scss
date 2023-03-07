@@ -1,0 +1,77 @@
+// Related post
+.related-post {
+  max-width: 1280px;
+
+  &__title {
+    font-size: 2.6rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  &__content {
+    @include mq(small) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    @include mq(small) {
+      display: block;
+    }
+
+    a {
+      position: relative;
+    }
+  }
+
+  &__read-more {
+    visibility: hidden;
+    position: absolute;
+    inset: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    color: #f4f4f4;
+    background-color: rgba(18, 18, 18, 0.7);
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+    }
+    @include mq(small) {
+      visibility: visible;
+    }
+  }
+
+  img {
+    max-width: 100px;
+    height: auto;
+    padding-right: 1rem;
+    @include mq(small) {
+      max-width: 100%;
+      padding-right: 0;
+    }
+  }
+}
+
+.entry-title {
+  margin-top: 0.2rem;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  a {
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

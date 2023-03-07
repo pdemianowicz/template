@@ -1,0 +1,93 @@
+.header {
+  background-color: $dark-color-700;
+
+  &__wrapper {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem;
+    background-color: $dark-color-700;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    color: $white-color;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  &__cta {
+    padding: 0.8rem 2.4rem;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: $white-color;
+  }
+
+  &__cart-button {
+    margin-right: 1rem;
+    background-color: transparent;
+    padding: 0;
+    color: $white-color;
+    position: relative;
+  }
+
+  &__cart-amount {
+    position: absolute;
+    top: 1rem;
+    left: 0.75rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #10b981;
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  &__search-button {
+    margin-right: 3.8rem;
+    background-color: transparent;
+    padding: 0;
+    color: $white-color;
+    @include mq(small) {
+      margin-right: 0;
+    }
+  }
+
+  &__banner {
+    text-align: center;
+    color: $white-color;
+    background-color: $dark-color;
+    padding: 2.5rem;
+  }
+
+  &__banner-title {
+    font-size: 6rem;
+    font-weight: 700;
+  }
+
+  &__banner-info {
+    margin-bottom: 2rem;
+  }
+
+  &__banner-btn {
+    color: $dark-color;
+    background-color: $white-color;
+    padding: 0.75rem 2.25rem;
+    border-radius: 15px;
+    &:hover {
+      background-color: $white-color-300;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// ALIGN RESPONSIVELY
+.alignleft {
+  display: inline;
+  padding-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  padding-left: 1.5em;
+}
+
+@include mq(small) {
+  .alignleft {
+    float: left;
+  }
+
+  .alignright {
+    float: right;
+  }
+}
+
+.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

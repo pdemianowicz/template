@@ -1,0 +1,59 @@
+/// Colors
+$primary-color: #404eed;
+$primary-color-300: #5865f2;
+$secondary-color: #23272a;
+
+$dark-color: #1e2021;
+$dark-color-300: #aaaaaa;
+$dark-color-400: #828282;
+$dark-color-700: #181a1b;
+
+$white-color: #f2f2f2;
+$white-color-300: #d1d1d1;
+
+$white: #fff;
+$black: #000;
+
+$text-color: #7a7a7a;
+$mid-grey: #777777;
+$mid-grey2: #999999;
+
+$secondary: #23272a;
+$black: rgb(0, 0, 0, 0.9);
+
+/////////////
+$base-font: "Source Sans Pro", "Myriad Pro", "Myriad Web Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+  "Segoe UI", Calibri, Helvetica, Arial, sans-serif;
+// $base-font: -apple-system, BlinkMacSystemFont, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+//   segoe ui symbol;
+// $base-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
+//   sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$header-font: $base-font;
+$ms-base: 1em, 0.875em;
+$ms-ratio: 1.618;
+
+// base color scheme
+$body-background: #fff;
+$color_body: #43454b;
+$color_links: #2c2d33;
+$color_border: #0000000d;
+$color_woocommerce: #7f54b3;
+$error: #e2401c;
+$success: #0f834d;
+$info: #3d9cd2;
+
+// layout sizes
+$desktop: 768px;
+$handheld: 568px;
+$container-width: ms(18);
+
+// fontawesome
+$fa-font-path: "../../../assets/fonts";
+
+// $css: ;
+// <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+// <path fill="#264de4" d="M71.357 460.819L30.272 0h451.456l-41.129 460.746L255.724 512z"/>
+// <path fill="#2965f1" d="M405.388 431.408l35.148-393.73H256v435.146z"/>
+// <path fill="#ebebeb" d="M124.46 208.59l5.065 56.517H256V208.59zM119.419 150.715H256V94.197H114.281zM256 355.372l-.248.066-62.944-16.996-4.023-45.076h-56.736l7.919 88.741 115.772 32.14.26-.073z"/>
+// <path fill="#fff" d="M255.805 208.59v56.517H325.4l-6.56 73.299-63.035 17.013v58.8l115.864-32.112.85-9.549 13.28-148.792 1.38-15.176 10.203-114.393H255.805v56.518h79.639L330.3 208.59z"/>
+// </svg>

@@ -1,0 +1,26 @@
+// Pagination
+.nav-pagination {
+  margin-top: 80px;
+  border-top: 1px solid #f1f3f5;
+  padding: 30px 0;
+  width: 100%;
+
+  .page-numbers {
+    color: #868e96;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.prev,
+    &.current,
+    &.next {
+      color: #212529;
+    }
+  }
+}
