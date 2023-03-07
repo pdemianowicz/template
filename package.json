@@ -11,7 +11,7 @@
     "browsersync": "browser-sync start --no-notify --proxy \"https://template.test\" --files \"**/*\" --b \"msedge\"",
     "start": "npm-run-all --parallel sass build:js browsersync watch:js",
     "pot": "wp-pot --src '**/*.php' --dest-file 'languages/translate.pot' --domain 'template'",
-    "zip": "dir-archiver --src . --dest ../template.zip --exclude .git .gitattributes .github .gitignore README.md node_modules package-lock.json package.json style.css.map"
+    "zip": "dir-archiver --src . --dest ../template.zip --exclude .git .gitattributes .github .gitignore README.md node_modules package-lock.json"
   },
   "devDependencies": {
     "browser-sync": "^2.11.2",

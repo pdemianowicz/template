@@ -32,21 +32,29 @@ if ( ! function_exists( 'template_woocommerce_setup' ) ) {
 }
 add_action( 'after_setup_theme', 'template_woocommerce_setup' );
 
-
 // Remove default woocommerce style
 // add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
-
 
 // Remove add to cart from main page
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart');
 
 
-// Add 'woocommerce-active' class to the body tag.
-function template_woocommerce_active_body_class( $classes ) {
-	$classes[] = 'woocommerce-active';
-	return $classes;
+// Add new tab
+add_filter( 'woocommerce_product_tabs', 'woo_new_product_tab' );
+function woo_new_product_tab( $tabs ) { 
+
+  $tabs['new_tab'] = array(
+    'title' 	=> __( 'New Tab', 'woocommerce' ),
+    'priority' 	=> 50,
+    'callback' 	=> 'woo_new_product_tab_content' );
+
+  return $tabs; }
+
+function woo_new_product_tab_content() {
+
+  // The new tab content goes here.. 
+  echo '<p>The new tab content goes here..</p>';
 }
-add_filter( 'body_class', 'template_woocommerce_active_body_class' );
 
 
 // Remove WooCommerce Generator tag, styles, and scripts from non WooCommerce pages.
